@@ -15,6 +15,9 @@
         padding-top: 10em;
 
         @include side-text;
+        .side-text{
+            position: relative !important;
+        }
 
         .works-list{
             width: 100%;
@@ -31,15 +34,47 @@
                     color: #fff;
                     font-size: 50px;
                     font-weight: bold;
+                    transition: 0.8s;
 
                     &:hover>a{
                         color: rgba(255, 255, 255, 0.603);
+                    }
+
+                    &:hover>.pic{
+                        opacity: 1;
+                        transition: 0.8s;
                     }
 
                     a{
                         text-decoration: none;
                         color: #fff;
                         transition: 0.4s;
+                    }
+
+                    .pic{
+                        width: 100%;
+                        display: flex;
+                        height: auto;
+                        opacity: 0;
+
+                        img{
+                            width: 10.5em;
+                            height: 6.5em;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            background-color: #fff;
+                            position: absolute;
+                            top: 8em;
+                            left: 0.8em;
+                            border: 1px solid rgb(63, 63, 63);
+                            transform: rotate(20deg);
+                            box-shadow: rgba(68, 67, 67, 0.466) 0px 70px 90px 0px;
+
+                            animation: rotate 1.2s linear infinite;
+
+                            @include rotate;
+                        }
                     }
                 }
             }

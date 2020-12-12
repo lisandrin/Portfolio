@@ -429,6 +429,10 @@ header .header-content .contact a {
   padding-top: 20px;
 }
 
+.portfolio .portfolio-content .side-text {
+  position: relative !important;
+}
+
 .portfolio .portfolio-content .works-list {
   width: 100%;
   height: auto;
@@ -449,10 +453,18 @@ header .header-content .contact a {
   color: #fff;
   font-size: 50px;
   font-weight: bold;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .portfolio .portfolio-content .works-list ul li:hover > a {
   color: rgba(255, 255, 255, 0.603);
+}
+
+.portfolio .portfolio-content .works-list ul li:hover > .pic {
+  opacity: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .portfolio .portfolio-content .works-list ul li a {
@@ -460,6 +472,70 @@ header .header-content .contact a {
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.portfolio .portfolio-content .works-list ul li .pic {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  opacity: 0;
+}
+
+.portfolio .portfolio-content .works-list ul li .pic img {
+  width: 10.5em;
+  height: 6.5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+  position: absolute;
+  top: 8em;
+  left: 0.8em;
+  border: 1px solid #3f3f3f;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-box-shadow: rgba(68, 67, 67, 0.466) 0px 70px 90px 0px;
+          box-shadow: rgba(68, 67, 67, 0.466) 0px 70px 90px 0px;
+  -webkit-animation: rotate 1.2s linear infinite;
+          animation: rotate 1.2s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    margin-top: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    margin-top: 15px;
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    margin-top: 0px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    margin-top: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    margin-top: 15px;
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    margin-top: 0px;
+  }
 }
 
 .portfolio .portfolio-content .works-list .description {

@@ -1,0 +1,38 @@
+@mixin top-line {
+    .top-line{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        background-image: url(https://static.tildacdn.com/tild6466-3535-4636-b236-383166373562/grid.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        background-color: #1a1a1a;
+        opacity: 0.2;
+    }
+}
+
+@mixin bottom-line {
+    .bottom-line{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: -50px;
+        z-index: 1;
+        background-image: url(https://static.tildacdn.com/tild6466-3535-4636-b236-383166373562/grid.svg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        background-color: #1a1a1a;
+        opacity: 1;
+    }
+}
+
+@mixin side-text {
+    .side-text{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+}

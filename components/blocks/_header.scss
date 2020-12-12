@@ -1,0 +1,56 @@
+header{
+  height:auto;
+  width:100%;
+  display: flex;
+  background-color: #4A79E0;
+  position: relative;
+
+  .header-content{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .name{
+      width: 100%;
+      display: flex;
+      height: auto;
+      padding: 10px;
+
+      a{
+        color: #e6e6e6;
+        font-size: 20px;
+        font-family: 'OpinionPro',Arial,sans-serif;
+        line-height: 1.35;
+        font-weight: 700;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    .contact{
+      width: 100%;
+      display: flex;
+      height: auto;
+      padding: 10px;
+      justify-content: flex-end;
+
+      a{
+        color: #e6e6e6;
+        font-size: 20px;
+        font-family: 'OpinionPro',Arial,sans-serif;
+        line-height: 1.35;
+        font-weight: 700;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
